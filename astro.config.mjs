@@ -6,8 +6,6 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  site: "https://gruppe5org.github.io",
-  base: '/archive'
+  site: 'https://gruppe5org.github.io', 
+  base: 'archive'
 });
-
-//https://github.com/gruppe5org/archive/
