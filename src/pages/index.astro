@@ -2,10 +2,12 @@
 import '@/styles/globals.css'
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import {CarouselBasic} from "@/components/BasicCarousel"
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<CarouselBasic client:load/>
 		<svg
 			class="astro-a"
 			width="495"
