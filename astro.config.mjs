@@ -7,7 +7,12 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind()],
-  site: 'https://gruppe5org.github.io', 
-  base: 'archive'
+  integrations: [
+    react(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+  ],
+  site: "https://gruppe5org.github.io",
+  base: "archive",
 });
