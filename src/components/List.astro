@@ -1,0 +1,17 @@
+---
+const { items, baseUrl } = Astro.props;
+---
+
+<ul class="grid grid-cols-1 gap-4">
+  {
+    items.map((item: string) => (
+      <li>
+        <a
+          href={`/${baseUrl}/${item.toLowerCase().replace(/\s+/g, "-")}`}
+        >
+          {item}
+        </a>
+      </li>
+    ))
+  }
+</ul>
